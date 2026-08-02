@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VisioCreate - Learn Professional Skills Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">●</span> Visio<span>Create.</span>
+      </a>
+
+      <nav class="nav-links" id="navMenu">
+        <a href="#home" class="active">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#experts">Mentors</a>
+        <a href="#exams">Exams</a>
+        <a href="#reviews">Reviews</a>
+        <div class="mobile-auth">
+          <a href="#" class="login-btn">Login</a>
+          <a href="#" class="register-btn">Register</a>
+        </div>
+      </nav>
+
+      <div class="auth-buttons">
+        <a href="#" class="login-btn desktop-only">Login</a>
+        <a href="#" class="register-btn desktop-only">Register</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-section" id="home">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Master Tech Skills<br>
+          Built For The <span class="highlight">Future</span>
+        </h1>
+        <p class="hero-subtitle">
+          Gain job-ready skills through live interactive mentorship, real-world industry projects, and internationally recognized certifications.
+        </p>
+        <a href="#courses" class="btn-primary">Explore Courses</a>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="arch-bg"></div>
+        <img src="images/hero-student.png" alt="Student learning online" class="hero-img">
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section">
+    <div class="features-container">
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e56d30" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+        </div>
+        <h3>Live Mentorship</h3>
+        <p>Clear doubts instantly with 1-on-1 real-time chat and weekly live sessions.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e56d30" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+        </div>
+        <h3>Mock Exams</h3>
+        <p>Test your knowledge with timed quizzes and real exam simulations.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e56d30" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+          </svg>
+        </div>
+        <h3>Global Challenges</h3>
+        <p>Participate in hackathons and compete with peer developers worldwide.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e56d30" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+          </svg>
+        </div>
+        <h3>Portfolio Building</h3>
+        <p>Build 5+ industry-grade projects to showcase directly to tech recruiters.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="categories-section">
+    <div class="categories-container">
+      <div class="categories-header">
+        <h2>Browse Top Categories</h2>
+      </div>
+
+      <div class="slider-wrapper">
+        <button class="fixed-btn prev-btn cat-prev" aria-label="Previous Category">&lt;</button>
+
+        <div class="categories-scroll" id="categoriesSlider">
+          <div class="category-card">
+            <img src="images/marketing.png" alt="Digital Marketing" class="category-img">
+            <div class="category-overlay"></div>
+            <span class="category-title">Digital Marketing</span>
+          </div>
+
+          <div class="category-card">
+            <img src="images/design.png" alt="UI/UX Design" class="category-img">
+            <div class="category-overlay"></div>
+            <span class="category-title">UI/UX Design</span>
+          </div>
+
+          <div class="category-card">
+            <img src="images/programming.png" alt="Full-Stack Web Dev" class="category-img">
+            <div class="category-overlay"></div>
+            <span class="category-title">Full-Stack Web Dev</span>
+          </div>
+
+          <div class="category-card">
+            <img src="images/technology.png" alt="Cloud & DevOps" class="category-img">
+            <div class="category-overlay"></div>
+            <span class="category-title">Cloud & DevOps</span>
+          </div>
+
+          <div class="category-card">
+            <img src="images/business.png" alt="Business Analytics" class="category-img">
+            <div class="category-overlay"></div>
+            <span class="category-title">Business Analytics</span>
+          </div>
+
+          <div class="category-card">
+            <img src="images/photography.png" alt="Media & Video" class="category-img">
+            <div class="category-overlay"></div>
+            <span class="category-title">Media & Video</span>
+          </div>
+        </div>
+
+        <button class="fixed-btn next-btn cat-next" aria-label="Next Category">&gt;</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="experts-section" id="experts">
+    <div class="experts-container">
+      <div class="experts-image-wrapper">
+        <img src="images/instructur.png" alt="Top Mentor" class="instructor-img">
+      </div>
+
+      <div class="experts-content">
+        <span class="tagline">★ High Impact Training</span>
+        
+        <h2>
+          Learn From <span class="highlight">Industry Leaders</span><br>
+          Not Just Textbooks
+        </h2>
+        
+        <p class="description">
+          Over 15,000+ career transitions made. Our curriculum is engineered alongside senior engineers and product managers from top global tech firms.
+        </p>
+
+        <div class="expert-features">
+          <div class="feature-item">
+            <span class="check-icon">✓</span>
+            <div>
+              <strong>1-on-1 Resume Reviews</strong>
+              <p>Get direct feedback on your portfolio, CV, and LinkedIn profile.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <span class="check-icon">✓</span>
+            <div>
+              <strong>Self-Paced Lifetime Access</strong>
+              <p>Watch recorded sessions anytime with guaranteed content updates.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <span class="check-icon">✓</span>
+            <div>
+              <strong>Verified Credentials</strong>
+              <p>Earn shareable certificates backed by industry standards.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="action-row">
+          <a href="#courses" class="btn-enroll">Enroll Now &rarr;</a>
+          
+          <div class="stats-badge">
+            <span class="stat-num">98%</span>
+            <span class="stat-text">Career Placement Rate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="courses-section" id="courses">
+    <div class="courses-container">
+      <div class="courses-header">
+        <h2>Featured <br><span>Bootcamps & Courses</span></h2>
+        
+        <div class="sort-dropdown">
+          <button class="sort-btn">
+            <span>Filter Category</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="courses-grid">
+        <div class="course-card">
+          <div class="course-img-wrapper">
+            <img src="images/cource-1.png" alt="Performance Marketing" class="course-img">
+            <span class="category-badge">Marketing</span>
+          </div>
+          <div class="course-content">
+            <div class="course-meta-top">
+              <span class="rating">★ 4.8</span>
+            </div>
+            <h3 class="course-title">Performance Marketing & SEO Masterclass</h3>
+            <div class="course-info">
+              <span>⏱ 6 Weeks</span>
+              <span>👥 1,540 Learners</span>
+            </div>
+            <div class="course-footer">
+              <span class="price">$29.99</span>
+              <a href="#" class="btn-course">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-img-wrapper">
+            <img src="images/cource-2.png" alt="Modern React Development" class="course-img">
+            <span class="category-badge">Development</span>
+          </div>
+          <div class="course-content">
+            <div class="course-meta-top">
+              <span class="rating">★ 4.9</span>
+            </div>
+            <h3 class="course-title">Modern Front-End Development with React</h3>
+            <div class="course-info">
+              <span>⏱ 8 Weeks</span>
+              <span>👥 2,180 Learners</span>
+            </div>
+            <div class="course-footer">
+              <span class="price">$39.99</span>
+              <a href="#" class="btn-course">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-img-wrapper">
+            <img src="images/cource-3.png" alt="UI UX Design" class="course-img">
+            <span class="category-badge">UI/UX Design</span>
+          </div>
+          <div class="course-content">
+            <div class="course-meta-top">
+              <span class="rating">★ 4.7</span>
+            </div>
+            <h3 class="course-title">Figma UI/UX Design System Bootcamp</h3>
+            <div class="course-info">
+              <span>⏱ 5 Weeks</span>
+              <span>👥 1,820 Learners</span>
+            </div>
+            <div class="course-footer">
+              <span class="price">$34.99</span>
+              <a href="#" class="btn-course">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-img-wrapper">
+            <img src="images/cource-4.png" alt="Commercial Photography" class="course-img">
+            <span class="category-badge">Photography</span>
+          </div>
+          <div class="course-content">
+            <div class="course-meta-top">
+              <span class="rating">★ 4.6</span>
+            </div>
+            <h3 class="course-title">Commercial Product Photography Essentials</h3>
+            <div class="course-info">
+              <span>⏱ 4 Weeks</span>
+              <span>👥 1,210 Learners</span>
+            </div>
+            <div class="course-footer">
+              <span class="price">$24.99</span>
+              <a href="#" class="btn-course">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-img-wrapper">
+            <img src="images/cource-5.png" alt="Data Science" class="course-img">
+            <span class="category-badge">Data Science</span>
+          </div>
+          <div class="course-content">
+            <div class="course-meta-top">
+              <span class="rating">★ 4.9</span>
+            </div>
+            <h3 class="course-title">Python for Data Analysis & Visualization</h3>
+            <div class="course-info">
+              <span>⏱ 10 Weeks</span>
+              <span>👥 3,450 Learners</span>
+            </div>
+            <div class="course-footer">
+              <span class="price">$49.99</span>
+              <a href="#" class="btn-course">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-img-wrapper">
+            <img src="images/cource-6.png" alt="Cyber Security" class="course-img">
+            <span class="category-badge">Cyber Security</span>
+          </div>
+          <div class="course-content">
+            <div class="course-meta-top">
+              <span class="rating">★ 4.8</span>
+            </div>
+            <h3 class="course-title">Ethical Hacking & Network Defense Essentials</h3>
+            <div class="course-info">
+              <span>⏱ 7 Weeks</span>
+              <span>👥 1,930 Learners</span>
+            </div>
+            <div class="course-footer">
+              <span class="price">$44.99</span>
+              <a href="#" class="btn-course">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="competition-section">
+    <div class="competition-header">
+      <h2>Compete With Scholars<br>From 40+ Nations</h2>
+    </div>
+
+    <div class="competition-body">
+      <div class="competition-container">
+        
+        <div class="scholar-card-wrapper">
+          <img src="images/scholar.png" alt="Scholar Student" class="scholar-img">
+        </div>
+
+        <div class="registration-card">
+          <p class="form-title">Subscribe for upcoming hackathons, tech workshops, and scholarship tests.</p>
+          
+          <form class="register-form" onsubmit="event.preventDefault();">
+            <div class="input-group">
+              <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+              <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-group">
+              <input type="tel" placeholder="Phone Number">
+            </div>
+            <div class="input-group select-group">
+              <span class="select-icon">⚙</span>
+              <select required>
+                <option value="" disabled selected hidden>Select Track Interest</option>
+                <option value="marketing">Digital Marketing</option>
+                <option value="development">Software Engineering</option>
+                <option value="design">UI/UX Design</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-form-submit">Register Now</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="exams-section" id="exams">
+    <div class="exams-container">
+      
+      <div class="exams-header">
+        <h2>Certification Assessments</h2>
+        <a href="#" class="see-all-link">View All Tests &rarr;</a>
+      </div>
+
+      <div class="slider-wrapper">
+        <div class="exams-scroll" id="examsSlider">
+          
+          <div class="exam-card">
+            <img src="images/exam-1.png" alt="Environmental Science Exam" class="exam-img">
+            <div class="exam-overlay"></div>
+            <span class="exam-title">NATURE<br>& Science</span>
+          </div>
+
+          <div class="exam-card">
+            <img src="images/exam-2.png" alt="Space Science Exam" class="exam-img">
+            <div class="exam-overlay"></div>
+            <span class="exam-title">Astrophysics<br>Basics</span>
+          </div>
+
+          <div class="exam-card">
+            <img src="images/exam-3.png" alt="Python Analytics Exam" class="exam-img">
+            <div class="exam-overlay"></div>
+            <span class="exam-title">Data Analysis<br>With Python</span>
+          </div>
+
+          <div class="exam-card">
+            <img src="images/exam-4.png" alt="Advanced Design Exam" class="exam-img">
+            <div class="exam-overlay"></div>
+            <span class="exam-title">Advanced<br>UX Systems</span>
+          </div>
+
+          <div class="exam-card">
+            <img src="images/exam-5.png" alt="Business Strategy Exam" class="exam-img">
+            <div class="exam-overlay"></div>
+            <span class="exam-title">Corporate<br>Strategy</span>
+          </div>
+
+          <div class="exam-card">
+            <img src="images/exam-6.png" alt="Machine Learning Exam" class="exam-img">
+            <div class="exam-overlay"></div>
+            <span class="exam-title">Machine<br>Learning</span>
+          </div>
+
+          <div class="exam-card">
+            <img src="images/exam-7.png" alt="Cyber Security Exam" class="exam-img">
+            <div class="exam-overlay"></div>
+            <span class="exam-title">Cyber Security<br>Audit</span>
+          </div>
+
+          <div class="exam-card">
+            <img src="images/exam-8.png" alt="Digital Marketing Exam" class="exam-img">
+            <div class="exam-overlay"></div>
+            <span class="exam-title">Brand<br>Growth</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="reviews-section" id="reviews">
+    <div class="reviews-container">
+      
+      <div class="reviews-top-title">
+        <span class="review-badge">★ TESTIMONIALS</span>
+      </div>
+
+      <div class="reviews-content-wrapper">
+        
+        <div class="reviews-left-content">
+          <h2>
+            Trusted By<br>
+            <span class="highlight">15,000+</span> Ambitious<br>
+            Learners
+          </h2>
+          <p class="reviews-subtext">
+            See how our hands-on projects helped students land roles at companies worldwide.
+          </p>
+        </div>
+
+        <div class="reviews-scroll-track" id="reviewsSlider">
+          
+          <div class="review-card">
+            <div class="card-quote-mark">“</div>
+            <div class="reviewer-header">
+              <img src="images/test-1.png" alt="Mohammad J." class="reviewer-avatar">
+              <div class="reviewer-info">
+                <h3>Mohammad J.</h3>
+                <p class="role">Frontend Engineer</p>
+              </div>
+            </div>
+            <div class="star-rating">★★★★★</div>
+            <p class="review-text">
+              The React course structure was incredible. I went from knowing zero JavaScript to landing my first job as a frontend engineer within 4 months!
+            </p>
+          </div>
+
+          <div class="review-card">
+            <div class="card-quote-mark">“</div>
+            <div class="reviewer-header">
+              <img src="images/test-2.png" alt="John M." class="reviewer-avatar">
+              <div class="reviewer-info">
+                <h3>John M.</h3>
+                <p class="role">Data Analyst</p>
+              </div>
+            </div>
+            <div class="star-rating">★★★★★</div>
+            <p class="review-text">
+              Real hands-on projects made all the difference. Having actual portfolio links during tech interviews was the main reason I got hired.
+            </p>
+          </div>
+
+          <div class="review-card">
+            <div class="card-quote-mark">“</div>
+            <div class="reviewer-header">
+              <img src="images/test-3.png" alt="Sarah J." class="reviewer-avatar">
+              <div class="reviewer-info">
+                <h3>Sarah J.</h3>
+                <p class="role">UI/UX Designer</p>
+              </div>
+            </div>
+            <div class="star-rating">★★★★★</div>
+            <p class="review-text">
+              The Figma UI/UX bootcamp gave me practical insights into design systems. Mentors reviewed my portfolio and gave actionable feedback.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer-section">
+    <div class="footer-container">
+      
+      <div class="footer-top">
+        <div class="footer-col brand-col">
+          <a href="#" class="footer-logo">
+            <span class="logo-circle">Visio</span>Create.
+          </a>
+          <p class="footer-tagline">
+            We are not here to sell digital courses; we deliver career transformations through expertise.
+          </p>
+          
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" class="social-img">
+            </a>
+            <a href="#" aria-label="Twitter">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter" class="social-img">
+            </a>
+            <a href="#" aria-label="Instagram">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" class="social-img">
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="LinkedIn" class="social-img">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col contact-col">
+          <div class="info-group">
+            <strong>Address:</strong>
+            <p>38 Opebi Road, Ikeja, Lagos State, Nigeria.</p>
+          </div>
+          <div class="info-group">
+            <strong>Phone:</strong>
+            <p>+234 902 239 6389</p>
+          </div>
+          <div class="info-group">
+            <strong>Email:</strong>
+            <p>support@visiocreate.com</p>
+          </div>
+        </div>
+
+        <div class="footer-col links-col">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#home">About Us</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#experts">Mentors</a></li>
+            <li><a href="#reviews">Testimonials</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <h2>Subscribe To Our Newsletter</h2>
+        <form class="newsletter-form" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Enter your email address..." required>
+          <button type="submit" class="btn-subscribe">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navMenu');
+
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        const icon = menuToggle.querySelector('i');
+        if (icon) {
+          icon.classList.toggle('fa-bars');
+          icon.classList.toggle('fa-xmark');
+        }
+      });
+    }
+
+    function setupSlider(sliderId, prevBtnClass, nextBtnClass) {
+      const slider = document.getElementById(sliderId);
+      const prevBtn = document.querySelector('.' + prevBtnClass);
+      const nextBtn = document.querySelector('.' + nextBtnClass);
+
+      if (slider && prevBtn && nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          slider.scrollBy({ left: 300, behavior: 'smooth' });
+        });
+
+        prevBtn.addEventListener('click', () => {
+          slider.scrollBy({ left: -300, behavior: 'smooth' });
+        });
+      }
+    }
+
+    setupSlider('categoriesSlider', 'cat-prev', 'cat-next');
+
+    function enableAutoScroll(sliderId, speed = 1, interval = 20) {
+      const slider = document.getElementById(sliderId);
+      if (!slider) return;
+
+      let timer;
+      function start() {
+        timer = setInterval(() => {
+          slider.scrollLeft += speed;
+          if (slider.scrollLeft >= slider.scrollWidth - slider.clientWidth - 1) {
+            slider.scrollLeft = 0;
+          }
+        }, interval);
+      }
+
+      function stop() {
+        clearInterval(timer);
+      }
+
+      start();
+      slider.addEventListener('mouseenter', stop);
+      slider.addEventListener('mouseleave', start);
+      slider.addEventListener('touchstart', stop);
+      slider.addEventListener('touchend', start);
+    }
+
+    enableAutoScroll('examsSlider');
+    enableAutoScroll('reviewsSlider');
+  </script>
+
+</body>
+</html>
